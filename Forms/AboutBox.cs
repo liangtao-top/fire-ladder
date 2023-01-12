@@ -101,5 +101,16 @@ namespace FireLadder.Forms
             }
         }
         #endregion
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            this.Dispose(true);
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //调用系统默认的浏览器
+            //System.Diagnostics.Process.Start(this.linkLabel1.Text);
+        }
     }
 }
